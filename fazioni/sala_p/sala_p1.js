@@ -4,7 +4,7 @@ const config = require('./config.json');
 
 
 module.exports = (newMember,client,i) => {
-    client.guilds.cache.get("697902605875019916").channels.create("🪓Covo #"+(i+1),{
+    client.guilds.cache.get(config.server).channels.create("🪓Covo #"+(i+1),{
         type: "voice",
         position: newMember.channel.rawPosition,
         parent: config.parente,

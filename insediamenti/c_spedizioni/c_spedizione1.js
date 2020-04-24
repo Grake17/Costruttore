@@ -5,7 +5,7 @@ const { Client, MessageEmbed } = require('discord.js');
 
 
 module.exports = (newMember,client,u) => {
-    client.guilds.cache.get("697902605875019916").channels.create("⛺Spedizione #"+(u+1),{
+    client.guilds.cache.get(config.server).channels.create("⛺Spedizione #"+(u+1),{
         type: "voice",        
         parent: config.parente,
         position: newMember.channel.rawPosition,
