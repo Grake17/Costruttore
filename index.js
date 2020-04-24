@@ -22,7 +22,8 @@ client.on("voiceStateUpdate", (oldMember,newMember) => {
             insediamenti(oldMember,newMember,client)
             fazioni(oldMember,newMember,client)
         }
-    }else if(oldMember.channel != null){
+    }
+    if(oldMember.channel != null){
         if(oldMember.channel.parent.id == config.parente1){
             insediamenti(oldMember,newMember,client)
         }else if(oldMember.channel.parent.id == config.parente2){
